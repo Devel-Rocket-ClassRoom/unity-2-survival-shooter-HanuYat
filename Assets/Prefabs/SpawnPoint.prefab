@@ -116,6 +116,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  spawnPoints:
+  - {fileID: 2568158555642163693}
+  - {fileID: 1718310618933084264}
+  - {fileID: 1380395626554715663}
+  gameManager: {fileID: 0}
 --- !u!1 &8072211714758752073
 GameObject:
   m_ObjectHideFlags: 0
