@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed9097eb5548bd4a906dcab58957894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCamera
-  target: {fileID: 1020295583030368990}
+  target: {fileID: 8894997816600019690}
 --- !u!114 &3315187171845056500
 MonoBehaviour:
   m_ObjectHideFlags: 0

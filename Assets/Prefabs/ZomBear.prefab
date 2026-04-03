@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 417796413289548039}
   - component: {fileID: 5498227749353696756}
   - component: {fileID: 3547481983495799104}
-  - component: {fileID: 3474949063115139005}
+  - component: {fileID: 5363517634308736804}
   m_Layer: 0
   m_Name: ZomBear
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587234065990172155}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -362, y: -203.5, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -202,7 +202,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3474949063115139005
+--- !u!114 &5363517634308736804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,7 +219,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   gunData: {fileID: 11400000, guid: 86dda1c2aee3fe141a29dbd8cd59544d, type: 2}
-  target: {fileID: 8894997816600019690, guid: ec4478c1bc09f4d4a95ad263dc946d3f, type: 3}
+  enemyData: {fileID: 11400000, guid: 4c01b972891f6714184f8b0480ba9bf2, type: 2}
+  target: {fileID: 0}
   hitParticles: {fileID: 1799683114500168981}
   deathClip: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
   hitClip: {fileID: 8300000, guid: 1d4840678e677424b8921716c72397ea, type: 3}

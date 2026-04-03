@@ -13,8 +13,10 @@ public class Enemy : LivingEntity
     }
 
     public GunData gunData;
+    public EnemyData enemyData;
 
     public Transform target;
+    public Transform spawnPoint;
     public ParticleSystem hitParticles;
 
     public AudioClip deathClip;
@@ -65,17 +67,6 @@ public class Enemy : LivingEntity
                     break;
             }
         }
-    }
-
-    public void Setup(EnemyData enemyData)
-    {
-        gameObject.SetActive(false);
-
-        startingHp = enemyData.maxHp;
-        _damage = enemyData.damage;
-        _agent.speed = enemyData.speed;
-
-        gameObject.SetActive(true);
     }
 
     private void Awake()
@@ -147,19 +138,13 @@ public class Enemy : LivingEntity
 
     private void UpdateTrace()
     {
-        if (target != null)
+        float distance = Vector3.Distance(transform.position, target.position);
+        if (distance <= _agent.stoppingDistance)
         {
-            if (target.CompareTag("Player"))
-            {
-                if (_enemyCollider.isTrigger)
-                {
-                    CurrentStatus = Status.Attack;
-                    return;
-                }
-            }
+            CurrentStatus = Status.Attack;
         }
 
-        if(target == null || Vector3.Distance(transform.position, target.position) > traceDistance)
+        if (target == null || Vector3.Distance(transform.position, target.position) > traceDistance)
         {
             CurrentStatus = Status.Idle;
             return;
@@ -199,6 +184,18 @@ public class Enemy : LivingEntity
                 }
             }
         }
+    }
+
+    public void Setup()
+    {
+        gameObject.SetActive(false);
+
+        target = GameObject.FindWithTag("Player").transform;
+        startingHp = enemyData.maxHp;
+        _damage = enemyData.damage;
+        _agent.speed = enemyData.speed;
+
+        gameObject.SetActive(true);
     }
 
     private void UpdateDie()

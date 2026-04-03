@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 4189296603719345084}
   - component: {fileID: 130787642408703938}
   - component: {fileID: 6211323519224363117}
-  - component: {fileID: 7531345401316956776}
+  - component: {fileID: 2733673263720392679}
   m_Layer: 0
   m_Name: Hellephant
   m_TagString: BigEnemy
@@ -153,7 +153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8079549509955850527}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -359, y: -203.5, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -327,7 +327,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7531345401316956776
+--- !u!114 &2733673263720392679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,7 +344,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   gunData: {fileID: 11400000, guid: 86dda1c2aee3fe141a29dbd8cd59544d, type: 2}
-  target: {fileID: 8894997816600019690, guid: ec4478c1bc09f4d4a95ad263dc946d3f, type: 3}
+  enemyData: {fileID: 11400000, guid: dbb4e9dfcc2496c4f8fbe9f296cae3a4, type: 2}
+  target: {fileID: 0}
   hitParticles: {fileID: 4101719630699583083}
   deathClip: {fileID: 8300000, guid: 8c615fd0429f34edf85539d70279360d, type: 3}
   hitClip: {fileID: 8300000, guid: fce027b40770a44298a6f5a4233bfb04, type: 3}
